@@ -1,0 +1,57 @@
+/*video播放器插件样式*/
+.video-bd{overflow: hidden;position: relative;}
+.video-con{position: relative;}
+.video-item .controls-wrap{position: absolute;bottom: 0px;left: 0;transition: all 0.3s; width: 100%;text-align: left; background: rgba(0,0,0,0.6); font-size: 14px;}
+.video-item .controls-wrap.full-active{z-index: 2147483650;}
+.video-item .controls-wrap.out{bottom: -30px;}
+.video-infocon{background: #fff;padding: 5px 12px;margin-bottom: 15px;}
+.video-infocon .video-name{line-height: 30px;font-size: 16px;}
+.video-infocon .video-time{line-height: 24px;font-size: 13px;color: #737373;}
+
+.share-infocon{background: #fff;padding: 15px 12px;border-bottom: 1px solid #eaeaea;}
+.from-con{float: left;width: 60%;font-size: 0;padding-left: 45px;box-sizing: border-box;overflow: hidden;}
+.resource-con{float: left;width: 39%;}
+.from-con .author-tx{width: 40px;height: 40px;border-radius: 20px;display: inline-block;vertical-align: middle;margin-left: -45px;margin-right: 5px;}
+.from-con .author-from{display: inline-block;vertical-align: middle; line-height: 40px;font-size: 15px;color: #000;white-space: nowrap;width: 100%;} 
+.from-con .author-name{font-style: normal;white-space: nowrap;}
+.resource-con .num-con{line-height: 40px;font-size: 15px;}
+.resource-con .num-con .num{font-style: normal;}
+
+.down-con{background: #fff;padding: 15px 12px;}
+.down-con .down-title{font-weight: normal;line-height: 36px;color: #666;font-size: 15px;text-align: center;}
+.app-link{background: #00c5f6;color: #fff;text-align: center;font-size: 16px;display: block;line-height: 36px;border-radius: 5px;text-decoration: none;}
+
+.playContent{font-size: 0;position: relative;}
+.playContent.full-active{z-index: 2147483650;}
+.controls-wrap .timebar .progress{width: 100%;height: 5px;background: rgba(0,0,0,0.3);cursor: pointer;margin: 0;}
+.progress-bar{display: block;height: 100%;background: #00c5f6;border-radius: 2px;}
+.video-item .controls-wrap .playicon{display: inline-block;vertical-align: middle;margin: 0 0px 0 5px; width: 20px;height: 20px;background: url(../images/pause_icon.png) center center/contain no-repeat;cursor: pointer;}
+.video-item .controls-wrap .playicon.on{background: url(../images/play_icon.png) center center/contain no-repeat;}
+.video-item .controls-wrap .timeinfo{padding: 0 0 0 5px;}
+.video-item .controls-wrap .timeinfo,.controls-wrap .timeinfo .currentTime,.controls-wrap .timeinfo .duration{
+    color: #fff;font-size: 12px;display: inline-block; height: 30px; line-height: 30px;
+}
+.video-item .controls-wrap .timeinfo .currentTime{margin-right: 2px;}
+.video-item .controls-wrap .timeinfo .duration{margin-left: 2px;}
+
+.playContent .play-tip{position: absolute;width: 40px;height: 40px;top: 50%;left: 50%;margin: -20px 0px 0 -20px;display: none;}
+.playContent .play-tip.on{display: block;}
+.video-item .play-msg{position: absolute;width: 100%;height: 100%;top: 0;left: 0;display: none;background: rgba(0,0,0,0.7);font-size: 14px;}
+.video-item .play-msg.on{display: block;}
+.video-item .play-msg p{color: #fff;text-align: center;line-height: 30px;position: absolute;top: 50%;left: 0;width: 100%;
+    -webkit-transform: translate3d(0,-50%,0);
+    -ms-transform: translate3d(0,-50%,0);
+    -o-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+}
+
+.playContent .play-tip img{width: 40px;height: 40px;display: inline-block;cursor: pointer;}
+.controls-wrap .otherControl{position: absolute;bottom: 0;right: 0;height: 30px;}
+.controls-wrap .otherControl .fullScreen{display: inline-block;margin-top: 4px; margin-right: 5px;cursor: pointer;}
+.controls-wrap .otherControl .fullScreen img{width: 18px;height: 18px;display: inline-block;} 
+
+.controls-wrap .otherControl .volumeBar{display: inline-block;margin-right: 10px;}
+.controls-wrap .otherControl .volumeBar .volumeicon{display: inline-block;vertical-align:middle; cursor: pointer; width: 20px;height: 20px;background: url(../images/speaker.png) center center/contain no-repeat;}
+.volumewrap{height: 5px;position: relative;cursor: pointer;width: 100px;display: inline-block;vertical-align:middle; }
+.volumewrap .progress{height: 5px;margin: 0;}
+.volumewrap .progress .progress-bar{position: absolute;}
